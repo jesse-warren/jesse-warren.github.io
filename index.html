@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/root.scss">
+  <link rel="stylesheet" type="text/css" href="./assets/css/nav.scss">
+  <link rel="stylesheet" type="text/css" href="./assets/css/about.scss">
+  <link rel="stylesheet" type="text/css" href="./assets/css/travel.scss">
+  <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+
+  
+</head>
+<body>
+  <section id="nav-bar-header">
+    <div 
+      id="about-section-trigger" 
+      onclick="revealSection('#about-section')" 
+      class="font-lato nav-option">
+      about
+    </div>
+    <div 
+      id="about-section-trigger" 
+      onclick="revealSection('#travel-section')" 
+      class="font-lato nav-option">
+      travel
+    </div>
+    <hr id="nav-bar-hr" />
+  </section>
+  <section><hr id="nav-bar-hr" /></section>
+  <section id="about-section" class="hidden">
+
+  </section>
+
+  <section id="travel-section" class="hidden">
+  
+  </section>
+</body>
+
+<script type="text/javascript" src="./assets/javascript/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./assets/javascript/nav.js"></script>
+</html>
