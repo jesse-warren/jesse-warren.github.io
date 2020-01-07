@@ -1,0 +1,21 @@
+.image-bar {
+  
+}
+
+.placeholder {
+  width: 50px;
+}
+
+.image-splash {
+  width: 500px;
+}
+
+#example {
+  background: #7fd6c2
+}
+
+.image-text {
+  width: 500px;
+  color: var(--light-font);
+  text-shadow: 0px 0px 3px var(--bg-dark);
+}

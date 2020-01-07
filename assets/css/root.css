@@ -1,0 +1,174 @@
+:root {
+  --bg-dark:#363942;
+  --bg-dark-rgba: 54, 56, 66;
+
+  --light-font: #ECF0F1;
+
+
+  --bg-medium:#888888;
+  --bg-light:#dddddd;
+
+  --primary-color:#aaaaaa;
+  --primary-color-hover-dark:#999999;
+  --primary-color-hover-light: #cccccc;
+}
+
+.font-liu {
+  font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.value-text {
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.vertical-margin {
+  height: 75px;
+}
+
+section {
+  margin: 0px auto;
+  min-width: 280px;
+  max-width: 800px;
+}
+
+.refined-hr {
+  border: none;
+  height: 1px;
+  background: rgba(var(--bg-dark-rgba), 0.1);
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align {
+  align-items: center
+}
+
+.pad-5 {
+  padding: 5px;
+}
+
+.pad-10 {
+  padding: 10px;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.unstyled-list {
+  list-style: none;
+}
+
+.unstyled-list li {
+  margin-bottom: 4px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+  transition: 0.5s;
+  padding: 20px;
+  margin: 20px;
+  margin-right: 60px;
+}
+
+.unstyled-list li:hover {
+  box-shadow: 1px 1px 18px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.search-bar {
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.1);
+  transition: 0.5s;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+
+  height: 32px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.search-bar:hover {
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+.search-bar:focus::placeholder {
+  color: transparent;
+}
+
+a {
+  color: #57BCFF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #2980B9;
+}
+
+.brand-icon {
+  width: 32px;
+  margin-right: 10px;
+}
+
+.search-example {
+  padding: 10px;
+  color: rgba(0,0,0,0.3);
+  font-weight: 600;
+}
+
+.search-example:hover {
+  cursor: pointer;
+  color: rgba(0,0,0,0.4);
+}
+
+.search-bar::placeholder {
+  color: rgba(0,0,0,0.4);
+}
+
+.project-stack {
+  color: rgba(0,0,0,0.4);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}

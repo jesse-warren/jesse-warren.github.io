@@ -8,48 +8,175 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="./assets/css/root.scss">
-  <link rel="stylesheet" type="text/css" href="./assets/css/nav.scss">
-  <link rel="stylesheet" type="text/css" href="./assets/css/about.scss">
-  <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.scss">
-  <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/root.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/images.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/gradients.css">
 
-  
 </head>
-<body>
-  <section id="nav-bar-header">
-    <div 
-      id="about-section-trigger" 
-      onclick="revealSection('#about-section')" 
-      class="font-lato nav-option">
-      about
-    </div>
-    <div 
-      id="travel-section-trigger" 
-      onclick="revealSection('#portfolio-section')" 
-      class="font-lato nav-option">
-      portfolio
-    </div>
-    <hr id="nav-bar-hr" />
-  </section>
+<body class="font-lato">
+
   <section>
-    <hr id="nav-bar-hr" />
-  </section>
-  <section id="about-section" class="hidden animated">
-    <div class="image-bar">
-      <img src="./assets/images/empty.jpg" />
-    </div class="image-bar">
-    <div class="text-over-image font-liu">
-      minimalist
+    <div class="flex-center align">
+      <img class="image-splash" src="assets/images/eastwood/eastwood-fatal-error.png">
     </div>
   </section>
 
-  <section id="portfolio-section" class="hidden animated">
-    
+  <section>
+    <div class="flex-center align">
+      <form>
+        <input 
+          onkeyup="searchFilter()"
+          id="search-bar" class="search-bar" placeholder="values" />
+        <input class="hidden" type="submit" />
+      </form>
+    </div>
   </section>
+
+  <section class="flex-center align">
+    <div onclick="applySearch('projects')" class="search-example noselect">
+      projects
+    </div>
+    <div onclick="applySearch('contact')" class="search-example noselect">
+      contact
+    </div>
+    <div onclick="applySearch('credits')" class="search-example noselect">
+      credits
+    </div>
+  </section>
+
+  <section class="font-lato">
+    <ul class="unstyled-list">
+
+      <li class="projects hidden">
+        <strong class="value-text">
+          <div>
+            <a href="https://strifechat.herokuapp.com/" target="_blank">
+              StrifeChat
+            </a>
+          </div>
+        </strong>
+        <small class="project-stack">
+          React & Rails - <a href="https://strifechat.herokuapp.com/" target="_blank">
+            https://strifechat.herokuapp.com/
+          </a>
+        </small><br /><br />
+        StrifeChat is an MIT licensed application and digital platform designed for programming communities, that specializes in text communication between users in a chat channel.
+      </li>
+
+      <li class="credits hidden">
+        <strong class="value-text">
+          <div>
+            <a href="https://icons8.com" target="_blank">
+              Icons8
+            </a>
+          </div>
+        </strong>
+        <small class="project-stack">
+          <a href="https://icons8.com" target="_blank">
+            https://icons8.com
+          </a>
+        </small><br /><br />
+        The beautiful graphics on my website are supplied by the talented artists over at Icons8.
+      </li>
+
+      <li class="values">
+        <strong class="value-text">
+          Disruptive Leadership
+        </strong><br /><br />
+        To challenge apathetic and nihilistic mindsets, interrupt the ever-present status quos, and catalyze the world-changers that are waiting to awaken in every organization.
+      </li>
+
+      <li class="values">
+        <strong class="value-text">
+          Strategic Vision
+        </strong><br /><br />
+        To enthusiastically vandalize the <q>bigger picture</q>, foster peer engagement in and ownership of ambitious successes, and shape the future of an always-evolving sphere of influence.
+      </li>
+
+      <li class="values">
+        <strong class="value-text">
+          Empathetic Communication
+        </strong><br /><br />
+        To encourage an unshakeable confidence in individual and collaborative decision-making, inspire internationally impactful moments of kindness and compassion, and offer hope.
+      </li>
+
+      <li class="contact hidden">
+        <strong class="value-text">
+          Get In Touch!
+        </strong><br /><br />
+        via email @ jesse.mwarren, with the provider that expresses great joy
+      </li>
+
+    </ul>
+  </section>
+
+
+    <!--
+    leader:
+    conflict resolution
+    ask great questions
+    incredible communicator
+    listening skills
+    understanding
+    reading people & adapting management style
+    building relationships
+    play well with peers and build coalitions
+
+
+    continuous improvement
+    learn from the past
+    know where they want to go
+    have mentors
+
+    trusted leader
+    realistic optimism
+    coaching employees effectively
+    able to size up team quickly
+    high expectations and show frustration
+    
+   -->
+  
+
+
+<!-- 
+  <section class="font-lato">
+
+    I've also dabbled in...
+    <ul class="unstyled-list">
+      <li>coaching competitive teams through to international recognition,</li>
+      <li>deliberately spilling champagne on myself to avoid spoiling a
+      bride and groom's night,</li>
+      <li>building tools to mitigate GDPR breaches on platforms with over 75 million monthly users,</li>
+      <li>and helping humans write their incredible stories of success, from Italy to Columbia.</li>
+    </ul>
+
+    If you, your executive team, or your wonderful aunt Bernice could see themselves getting along with me, let's get a cup of coffee! <br /><br />
+  </section> -->
+
+
+  <!-- <section class="font-lato">
+    First, aren't these graphics beautiful? You can check out more of their work at the <a href="https://icons8.com" target="_blank">icons8</a> website. <br /><br />
+    As for me, you can find me on <a href="https://twitter.com/jesse__warren" target="_blank">Twitter</a> and <a href="https://github.com/jesse-warren" target="_blank">GitHub</a>
+
+    <br /><br />
+    Finally, you can reach out directly at <q>jesse.mwarren</q> at the email provider that sounds like a vocalized celebration.
+
+  </section> -->
+
+  <section>
+    <div class="flex-center align">
+      <img class="image-splash" src="assets/images/eastwood/eastwood-logged-out.png">
+      <!-- <img class="image-splash" src="assets/images/eastwood/eastwood-downloading.png"> -->
+
+    </div>
+  </section>
+
+  <section class="vertical-margin"></section>
+
+
 </body>
 
 <script type="text/javascript" src="./assets/javascript/jquery.js"></script>
-<script type="text/javascript" src="./assets/javascript/lodash.js"></script>
-<script type="text/javascript" src="./assets/javascript/nav.js"></script>
+<script type="text/javascript" src="./assets/javascript/root.js"></script>
 </html>
