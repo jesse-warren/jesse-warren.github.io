@@ -1,42 +1,36 @@
-const filters = ["projects", "contact", "credits", "values"]
+const tags = ["projects", "contact", "credits", "values", "roles", "testimony"]
 
 const searchFilter = () => {
-  filters.forEach(filter => {
-    $(`.${filter}`).addClass('hidden')
+  // Hide all tags
+  tags.forEach(tag => {
+    $(`.${tag}`).addClass('hidden')
   })
   const searchValue = $("#search-bar").val()
+  // Then, convert user's input into a regex search
   const regexSearch = new RegExp(searchValue, "i");
   if (searchValue !== "") {
-    const appliedFilters = filters.filter(filterName => {
-      return regexSearch.test(filterName)
+    // Filter tags that match regex search
+    const appliedFilters = tags.filter(tag => {
+      return regexSearch.test(tag)
     })
 
+    // Show all filtered in tags
     appliedFilters.forEach(filterToApply => {
       $(`.${filterToApply}`).removeClass('hidden')
     })
-  }
-  // No else statement needed
+  } // No else statement needed
 }
 
 const applySearch = (search) => {
   const searchBar = $("#search-bar")
+  // Force apply a search value, for tag selection
   if (searchBar.val() !== search) {
     searchBar.val(search)
     searchFilter()
   } else {
+    // If same tag is clicked again, reset to 'values' filter
     searchBar.val("values")
     searchFilter()
   }
   
 }
-
-// const changeSearch = () => {
-//   const searchBar = $("#search-bar")
-
-//   let data = document.querySelectorAll(`data[name="${searchBar()}"]`)
-//   if (data.length) {
-//     result.textContent = Array.from(data).map(i => `${name.value} is a ${i.getAttribute("job")}`).join(", another ")
-//   } else {
-//     result.textContent = `No "${name.value}" found`
-//   }
-// }

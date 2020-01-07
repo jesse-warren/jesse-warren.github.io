@@ -106,7 +106,7 @@ section {
 
 .unstyled-list li:hover {
   box-shadow: 1px 1px 18px rgba(0,0,0,0.4);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .search-bar {
