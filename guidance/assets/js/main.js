@@ -1,3 +1,1 @@
-import {test} from "./moduleTest.js"
-
-console.log(test)
+import root from "./components/root.js"
