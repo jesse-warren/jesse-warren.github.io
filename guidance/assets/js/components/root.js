@@ -1,5 +1,4 @@
-
-const createRootComponent = (
+export const createRootComponent = (
   {type, id, classes, content, onclick, src}
 ) => {
   if (id) id = `id="${id}"`
